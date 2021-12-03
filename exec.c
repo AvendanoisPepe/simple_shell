@@ -9,14 +9,14 @@
  */
 int _excev(char *token)
 {
-	char *path = check_path(desttok);
+	char *path = check_path(token);
 	char *argv[1024];
 	int i, j;
 	argv[0] = path;
 
-	for (i = 1, j = 1;desttok[j]; i++,j++)
+	for (i = 1, j = 1;token[j]; i++,j++)
 	{
-		argv[i] = desttok
+		argv[i] = token;
 	}
 	/*char *argv[2] = {NULL, NULL};
 	argv[0] = token;
@@ -115,6 +115,6 @@ char *_arguments(char *line)
 		token = strtok(NULL, " ");
 		cont++;
 	}
-	_excev(newstring);
+	_excev(*newstring);
 	return (NULL);
 }
