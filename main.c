@@ -17,7 +17,7 @@ int main ()
 		prompt();
 		input = getline(&line, &lineSize, stdin);
 		line[input - 1] = '\0'; 
-		_arguments(line);
+		/*_arguments(line);*/
 		if (input == -1)
 		{
 			write(STDOUT_FILENO, "logout\n", 7);

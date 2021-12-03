@@ -9,7 +9,7 @@
  */
 int _excev(char *token)
 {
-	char *path = check_path(token);
+	/*char *path = check_path(token);
 	char *argv[1024];
 	int i, j;
 	argv[0] = path;
@@ -17,10 +17,10 @@ int _excev(char *token)
 	for (i = 1, j = 1;token[j]; i++,j++)
 	{
 		argv[i] = token;
-	}
-	/*char *argv[2] = {NULL, NULL};
+	}*/
+	char *argv[2] = {NULL, NULL};
 	argv[0] = token;
-	argv[1] = NULL;*/
+	argv[1] = NULL;
 
 	if (execve(argv[0], argv, NULL) == -1)
 	{
@@ -116,5 +116,6 @@ char *_arguments(char *line)
 		cont++;
 	}
 	_excev(*newstring);
+	printf("%s\n", *newstring);
 	return (NULL);
 }
