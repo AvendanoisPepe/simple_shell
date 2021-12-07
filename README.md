@@ -1,10 +1,10 @@
 ![](https://www.muyseguridad.net/wp-content/uploads/2014/09/ShellShock.jpg)
 
-#The Gates of Shell----☠️🫁 ☠️🫁 ☠️🫁 ☠️
+# The Gates of Shell----☠️🫁 ☠️🫁 ☠️🫁 ☠️
 
 ------------
 
-#Shell Description.
+# Shell Description.
 
 ------------
 
@@ -155,16 +155,16 @@ First, a flowchart was generated which contains data input, cycles, functions, s
 
 ![](https://scontent.fbog4-1.fna.fbcdn.net/v/t39.30808-6/263840334_3053735084891201_161661929072647008_n.jpg?_nc_cat=105&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeFdWpNWWGebcWFl99-nkWVcLnjn2jvOhpUueOfaO86GlW89Zz3ID5SaLq-wlSVRWb6c5SSIG1Xxm9D8tj3lQrev&_nc_ohc=8_TMlvCAARoAX8X7Em6&tn=L38CwoRKb5t4MH73&_nc_ht=scontent.fbog4-1.fna&oh=e141e96c93bb12cd55f0c829ddeb5073&oe=61B3F28C)
 
-#Authors:
-##Carolina Espitia: 
+# Authors:
+## Carolina Espitia: 
 - Git: https://github.com/caritoespicaita
 - Twitter: https://twitter.com/karolitablue
 - Linkedin: https://www.linkedin.com/in/carolina-espitia-caita-669621b6
-##Jhon Gonzalez: 
+## Jhon Gonzalez: 
 - Git: https://github.com/jhonholberton
 - Twitter:@jhonholberton
 - Linkedin: https://www.linkedin.com/in/jhon-gonzalez-354487202
-##Juan Sebastian Avendaño Gonzalez:
+## Juan Sebastian Avendaño Gonzalez:
 - Git: https://github.com/AvendanoisPepe
 - Twitter: https://twitter.com/Sebastian_Aven
 - Linkedin: https://www.linkedin.com/in/juan-sebastian-avenda%C3%B1o-gonz%C3%A1lez-8b1185200/
