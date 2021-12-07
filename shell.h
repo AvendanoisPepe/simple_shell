@@ -23,5 +23,5 @@ char *tokenizer(char *line, const char *separator);
 char *_path();
 char *check_path(char *line);
 int child_process(void);
-void ctrol(void);
+void ctrol(int number __attribute__((unused)));
 #endif

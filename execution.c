@@ -39,9 +39,10 @@ int _excev(char **token)
 	return (0);
 }
 /**
- * ctrol - controla el comando ctrl+c
+ * ctrol - command ctrl+c
+ * @number: flag signal
  */
-void ctrol(void)
+void ctrol(int number __attribute__((unused)))
 {
 	signal(SIGINT, ctrol);
 	write(STDOUT_FILENO, "\n:D : ", 6);

@@ -14,7 +14,7 @@ int main(void)
 	while (1)
 	{
 		prompt();
-		input = getline(&line, &lineSize, stdin); /
+		input = getline(&line, &lineSize, stdin);
 		line[input - 1] = '\0';
 		if (_strcmp(line, "exit") == 0)
 		{
