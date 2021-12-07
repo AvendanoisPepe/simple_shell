@@ -140,6 +140,23 @@ I have the flu :(
 
 ------------
 
+Commands such as: ls and pwd by entering the full path.
+
+------------
+
+
+### Ls:
+```c
+:D : /bin/ls
+ AUTHORS  'README copy.md'   README.md   execution.c   functions.c   hsh   main.c   path.c   prompt.c   shell.h
+```
+### pwd:
+```c
+:D : /bin/pwd
+/home/vagrant/simple_shell/prueba_simple_shell
+```
+------------
+
 
 ## Special commands:
 
