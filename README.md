@@ -1,6 +1,6 @@
 ![](https://www.muyseguridad.net/wp-content/uploads/2014/09/ShellShock.jpg)
 
-# The Gates of Shell----☠️🫁 ☠️🫁 ☠️🫁 ☠️🫁 ☠️🫁
+# The Gates of Shell----☠️🫁 ☠️🫁 ☠️🫁 ☠️🫁 ☠️🫁 ☠
 
 ------------
 
