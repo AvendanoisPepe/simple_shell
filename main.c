@@ -43,5 +43,6 @@ int main(void)
 				wait(NULL);
 		}
 	}
+	free(line);
 	return (0);
 }
