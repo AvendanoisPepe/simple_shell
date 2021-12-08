@@ -15,8 +15,8 @@ int main(void)
 	{
 		prompt();
 		input = getline(&line, &lineSize, stdin);
-		line[input - 1] = '\0';
-		if (_strcmp(line, "exit") == 0)
+		/*line[input - 1] = '\0';*/
+		if (_strcmp(line, "exit\n") == 0)
 		{
 			write(STDOUT_FILENO, "logout\n", 7);
 			break;

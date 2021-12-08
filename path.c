@@ -39,11 +39,15 @@ char *_path()
 char *check_path(char *line)
 {
 	char *phat_file, *token, *backslash = "/", *desttok[1024];
-	int value_stat;
+	int value_stat, i;
 	struct stat statvar;
 
 	phat_file = _path();
 	token = strtok(phat_file, ":");
+	for (i = 0; i < 1024; i++)
+	{
+		desttok[i] = NULL;
+	}
 	while (token)
 	{
 		desttok[0] = malloc(sizeof(char) * 1024);
