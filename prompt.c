@@ -9,6 +9,6 @@ void prompt(void)
 {
 	char *promt = ":D : ";
 
-	if (isatty(stdin) == 1)
+	if (isatty(STDIN_FILENO) == 1)
 		write(STDOUT_FILENO, promt, getstringlen(promt));
 }
