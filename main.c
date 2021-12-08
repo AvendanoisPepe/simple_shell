@@ -16,13 +16,13 @@ int main(void)
 		prompt();
 		input = getline(&line, &lineSize, stdin);
 		/*line[input - 1] = '\0';*/
-		if (_strcmp(line, "exit\n") == 0)
+		if (_strcmp(line, "exit\n") == 0 || input == -1)
 			break;
 		if (_strcmp(line, "env\n") == 0)
 			get_env();
-		if (input == -1)
+		if (espacio(line) == 0)
 		{
-			break;
+			continue;
 		}
 		else
 		{

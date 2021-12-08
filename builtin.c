@@ -23,11 +23,10 @@ int espacio(char *line)
 	{
 		if (line[i] == ' ' || line[i] == '\t' || line[i] == '\n')
 		{
-			isValid = -1;
-			i = probando;
+			isValid += 0;
 		}else
 		{
-			isValid = 0;
+			isValid += 1;
 		}
 	}
 	return (isValid);
