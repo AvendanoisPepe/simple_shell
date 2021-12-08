@@ -9,7 +9,7 @@ int main(void)
 	size_t lineSize = 0;
 	int input = 0;
 	pid_t idenprocess;
-	
+
 	signal(SIGINT, ctrol);
 	while (1)
 	{
@@ -17,15 +17,11 @@ int main(void)
 		input = getline(&line, &lineSize, stdin);
 		/*line[input - 1] = '\0';*/
 		if (_strcmp(line, "exit\n") == 0)
-		{
 			break;
-		}
-		if (_strcmp(line, "env") == 0)
+		if (_strcmp(line, "env\n") == 0)
 			get_env();
 		if (input == -1)
-		{
 			break;
-		}
 		else
 		{
 			idenprocess = child_process();
