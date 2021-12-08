@@ -3,12 +3,14 @@
  * main - execute the program.
  * Return: Always 0.
  */
-int main(void)
+int main(int argc, char **argv)
 {
 	char  *line;
 	size_t lineSize = 0;
 	int input = 0;
 	pid_t idenprocess;
+	(void)argc;
+	(void)argv;
 
 	signal(SIGINT, ctrol);
 	while (1)
