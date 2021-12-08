@@ -24,4 +24,7 @@ char *_path();
 char *check_path(char *line);
 int child_process(void);
 void ctrol(int number __attribute__((unused)));
+int espacio(char *line);
+int main(void);
+
 #endif

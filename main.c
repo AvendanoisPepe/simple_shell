@@ -21,7 +21,9 @@ int main(void)
 		if (_strcmp(line, "env\n") == 0)
 			get_env();
 		if (input == -1)
+		{
 			break;
+		}
 		else
 		{
 			idenprocess = child_process();

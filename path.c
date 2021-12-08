@@ -84,7 +84,7 @@ char *check_path(char *line)
 char *tokenizer(char *line, const char *separator)
 {
 	char *token, *token1[1024];
-	int  i = 0;
+	int i = 0, guardar = 0;
 
 	token = strtok(line, separator);
 	while (token)
@@ -93,7 +93,24 @@ char *tokenizer(char *line, const char *separator)
 		token = strtok(NULL, separator);
 		i++;
 	}
-	_excev(token1);
+
+	guardar = espacio(line);
+
+	while (guardar)
+	{
+		if (guardar == -1)
+		{
+			main();
+			continue;
+		}
+		guardar++;
+	}
+
+	if (token1[0] != NULL)
+	{
+		_excev(token1);
+	}
+
 	return (token);
 	free(token1);
 }

@@ -13,3 +13,22 @@ void get_env(void)
 		i++;
 	}
 }
+int espacio(char *line)
+{
+	int probando, i;
+	int isValid = 0;
+
+	probando = getstringlen(line);
+	for (i = 0; i < probando; i++)
+	{
+		if (line[i] == ' ' || line[i] == '\t' || line[i] == '\n')
+		{
+			isValid = -1;
+			i = probando;
+		}else
+		{
+			isValid = 0;
+		}
+	}
+	return (isValid);
+}
