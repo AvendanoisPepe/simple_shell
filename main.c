@@ -18,14 +18,12 @@ int main(void)
 		/*line[input - 1] = '\0';*/
 		if (_strcmp(line, "exit\n") == 0)
 		{
-			write(STDOUT_FILENO, "logout\n", 7);
 			break;
 		}
 		if (_strcmp(line, "env") == 0)
 			get_env();
 		if (input == -1)
 		{
-			write(STDOUT_FILENO, "logout\n", 7);
 			break;
 		}
 		else
