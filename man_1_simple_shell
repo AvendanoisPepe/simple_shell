@@ -15,7 +15,7 @@
 .PP
 .SH OPTIONS
 .PP
-.B Simple Shell operates in both interactive andnon-interactive mode. The user may initiate
+.B Simple Shell operates in both interactive and non-interactive mode. The user may initiate
 .B simple shell and begin working or initate
 .B simple shell using commands meant to be run by the program.
 .PP
@@ -30,15 +30,13 @@ may be invoked with the same functionality in
 .I interactive
 or
 .I non-interactive
-mode.  The user may quit the program by typing "exit", "Ctrl + D", or "Ctrl + C" on the command line.
+mode.  The user may quit the program by typing "exit" or "Ctrl + D" on the command line.
 When the program quits or a command has been executed,
 .B simple shell
 returns with a new prompt: ":D : "
 
 .B Examples
 .IP
-
-:D : ./hsh
 
 :D : pwd
 

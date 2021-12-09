@@ -92,14 +92,13 @@ Commands such as: ls and its derivatives, pwd, cat and echo.
 ### Ls:
 ```c
 :D : ls
-AUTHORS  'README copy.md'   README.md   execution.c   functions.c   hsh   main.c   path.c   prompt.c   shell.h
+AUTHORS   README.md   execution.c   functions.c   hsh   main.c   path.c   prompt.c   shell.h
 :D : ls -la
 total 68
 drwxrwxr-x 3 vagrant vagrant  4096 Dec  7 00:41  .
 drwxrwxr-x 6 vagrant vagrant  4096 Dec  5 19:43  ..
 drwxrwxr-x 8 vagrant vagrant  4096 Dec  7 00:40  .git
 -rw-rw-r-- 1 vagrant vagrant   272 Dec  5 19:43  AUTHORS
--rw-rw-r-- 1 vagrant vagrant    15 Dec  5 19:43 'README copy.md'
 -rw-rw-r-- 1 vagrant vagrant    21 Dec  5 19:43  README.md
 -rw-rw-r-- 1 vagrant vagrant   879 Dec  7 00:40  execution.c
 -rw-rw-r-- 1 vagrant vagrant  1540 Dec  7 00:40  functions.c
@@ -148,7 +147,7 @@ Commands such as: ls and pwd by entering the full path.
 ### Ls:
 ```c
 :D : /bin/ls
- AUTHORS  'README copy.md'   README.md   execution.c   functions.c   hsh   main.c   path.c   prompt.c   shell.h
+ AUTHORS   README.md   execution.c   functions.c   hsh   main.c   path.c   prompt.c   shell.h
 ```
 ### pwd:
 ```c
