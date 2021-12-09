@@ -34,7 +34,7 @@ int _excev(char **token)
 	}
 	if (execve(argv[0], argv, NULL) == -1)
 	{
-		perror("Error:");
+		perror("fail");
 		exit(0);
 	}
 	return (0);
