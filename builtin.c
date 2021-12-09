@@ -15,12 +15,17 @@ void get_env(void)
 	}
 }
 
-
-
 /**
  * get_env - print exit.
  */
-int get_exit(void)
+int get_exit(char *line)
 {
-	return (EXIT_SUCCESS);
+	struct stat statvar;
+	
+	if (stat(line, &statvar) != 0)
+	{
+		return (2);
+	}
+	else
+		return (EXIT_SUCCESS);
 }

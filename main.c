@@ -17,7 +17,7 @@ int main(void)
 		input = getline(&line, &lineSize, stdin);
 		if (_strcmp(line, "exit\n") == 0 || input == -1)
 		{
-			get_exit();
+			get_exit(line);
 			break;
 		}
 		if (_strcmp(line, "env\n") == 0)
