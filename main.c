@@ -15,7 +15,6 @@ int main(void)
 	{
 		prompt();
 		input = getline(&line, &lineSize, stdin);
-		/*line[input - 1] = '\0';*/
 		if (_strcmp(line, "exit\n") == 0 || input == -1)
 		{
 			break;
@@ -25,7 +24,7 @@ int main(void)
 			get_env();
 			continue;
 		}
-		if (espacio(line) == 0)
+		if (spaces(line) == 0)
 		{
 			continue;
 		}

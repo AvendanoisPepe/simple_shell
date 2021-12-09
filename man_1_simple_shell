@@ -1,0 +1,64 @@
+.TH HSH  "NOVEMBER 2021" Version(0.1) "SIMPLE SHELL"
+.SH NAME
+.PP
+.B hsh - command interpreter (shell) 
+.PP
+.SH SYNOPSIS
+.PP
+.B ./hsh
+.PP
+.SH DESCRIPTION
+.PP
+.B The hsh (Simple Shell) is shell command interpreter that executes command read from the standard input or from file.
+.PP
+.B it is similar to bash or dash.
+.PP
+.SH OPTIONS
+.PP
+.B Simple Shell operates in both interactive andnon-interactive mode. The user may initiate
+.B simple shell and begin working or initate
+.B simple shell using commands meant to be run by the program.
+.PP
+.SH ARGUMENTS
+.PP
+The first argument, argument 0 is understood to be the command to be run by
+.B simple shell
+and arguments following as modifiers or options.
+.SH INVOCATION
+.B simple shell
+may be invoked with the same functionality in
+.I interactive
+or
+.I non-interactive
+mode.  The user may quit the program by typing "exit", "Ctrl + D", or "Ctrl + C" on the command line.
+When the program quits or a command has been executed,
+.B simple shell
+returns with a new prompt: ":D : "
+
+.B Examples
+.IP
+
+:D : ./hsh
+
+:D : pwd
+
+/home/vagrant/simple_shell/prueba_simple_shell
+
+:D : /bin/pwd
+
+/home/vagrant/simple_shell/prueba_simple_shell
+
+:D : ls
+
+AUTHORS  README.md   execution.c   functions.c   hsh   main.c   path.c   prompt.c   shell.h
+
+.PP
+.SH RESERVED WORDS
+.B exit:
+quits the program, exits the shell.
+
+.B env:
+prints the environment variables
+.PP
+.SH AUTHORS
+Juan Sebastian Avendaño Gonzalez - Jhon Gonzalez - Carolina Espitia  

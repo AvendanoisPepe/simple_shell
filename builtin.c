@@ -1,6 +1,7 @@
 #include "shell.h"
+
 /**
- * get_env - Imprime el environ.
+ * get_env - print environ.
  */
 void get_env(void)
 {
@@ -12,22 +13,4 @@ void get_env(void)
 		write(STDOUT_FILENO, "\n", 2);
 		i++;
 	}
-}
-int espacio(char *line)
-{
-	int probando, i;
-	int isValid = 0;
-
-	probando = getstringlen(line);
-	for (i = 0; i < probando; i++)
-	{
-		if (line[i] == ' ' || line[i] == '\t' || line[i] == '\n')
-		{
-			isValid += 0;
-		}else
-		{
-			isValid += 1;
-		}
-	}
-	return (isValid);
 }
