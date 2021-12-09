@@ -20,6 +20,7 @@ int main(void)
 		if (_strcmp(line, "exit\n") == 0 || input == -1)
 		{
 			exit(exitStatus);
+			break;
 		}
 		if (_strcmp(line, "env\n") == 0)
 		{
