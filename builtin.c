@@ -27,5 +27,7 @@ int get_exit(char *line)
 		return (2);
 	}
 	else
+	{
 		return (EXIT_SUCCESS);
+	}
 }
