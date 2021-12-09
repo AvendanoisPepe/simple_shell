@@ -5,8 +5,7 @@
  */
 int main(void)
 {
-	char *line = NULL;
-	char *exit[2] = {"exit\n"};
+	char  *line = NULL;
 	size_t lineSize = 0;
 	int input = 0;
 	pid_t idenprocess;
@@ -17,9 +16,12 @@ int main(void)
 		prompt();
 		input = getline(&line, &lineSize, stdin);
 		/*line[input - 1] = '\0';*/
-		if (_strcmp(line, *exit) == 0 || input == -1)
+		if (_strcmp(line, "exit\n") == 0 || input == -1)
 		{
-			break;
+			exit(0);
+		}
+		else{
+			exit(2);
 		}
 		if (_strcmp(line, "env\n") == 0)
 		{
