@@ -14,11 +14,3 @@ void get_env(void)
 		i++;
 	}
 }
-
-/**
- * get_env - print exit.
- */
-void get_exit(void)
-{
-	exit (EXIT_SUCCESS);
-}

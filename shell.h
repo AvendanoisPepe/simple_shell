@@ -17,7 +17,6 @@ char *_strcat(char *dest, char *src);
 int getstringlen(char *string);
 
 void get_env(void);
-void get_exit(void);
 int _excev(char **token);
 void prompt(void);
 char *tokenizer(char *line, const char *separator);
