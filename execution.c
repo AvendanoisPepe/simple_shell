@@ -32,7 +32,7 @@ int _excev(char **token)
 	{
 		argv[i] = token[i];
 	}
-	if (execve(argv[0], argv, NULL) == -1)
+	if (execve(argv[0], argv, environ) == -1)
 	{
 		perror("fail");
 		exit(2);
