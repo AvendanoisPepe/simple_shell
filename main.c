@@ -7,8 +7,9 @@ int main(void)
 {
 	char  *line = NULL;
 	size_t lineSize = 0;
-	int input = 0;
+	int input = 0, status = 0;
 	pid_t idenprocess;
+	int exitStatus = 0;
 
 	signal(SIGINT, ctrol);
 	while (1)
@@ -17,7 +18,7 @@ int main(void)
 		input = getline(&line, &lineSize, stdin);
 		if (_strcmp(line, "exit\n") == 0 || input == -1)
 		{
-			return (0);
+			exit(exitStatus);
 			break;
 		}
 		if (_strcmp(line, "env\n") == 0)
@@ -41,9 +42,12 @@ int main(void)
 				tokenizer(line, " \t\n\"");
 			}
 			else
-				wait(NULL);
+			{
+				wait(&status);
+				exitStatus = WEXITSTATUS(status);
+			}
 		}
 	}
 	free(line);
-	return (2);
+	return (exitStatus);
 }
