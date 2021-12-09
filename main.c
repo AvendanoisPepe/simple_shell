@@ -9,7 +9,7 @@ int main(void)
 	size_t lineSize = 0;
 	int input = 0, status = 0;
 	pid_t idenprocess;
-	int exitStatus;
+	int exitStatus = 0;
 
 	signal(SIGINT, ctrol);
 	while (1)
@@ -49,5 +49,5 @@ int main(void)
 		}
 	}
 	free(line);
-	return (0);
+	return (exitStatus);
 }
