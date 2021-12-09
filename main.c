@@ -18,7 +18,7 @@ int main(void)
 		/*line[input - 1] = '\0';*/
 		if (_strcmp(line, "exit\n") == 0 || input == -1)
 		{
-			break;
+			exit(-1);
 		}
 		if (_strcmp(line, "env\n") == 0)
 		{
