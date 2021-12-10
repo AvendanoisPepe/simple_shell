@@ -40,6 +40,8 @@ Normally used for Unix-like operating systems, the shell is an interactive inter
 | ------------ | ------------ | ------------ |
 | execution.c  | child_process(void)  | Creation of a child process.  |
 | execution.c  | _excev(char **token)  | Execute the command written in the prompt.  |
+| builtin.c    | get_env(void)  | Evaluated spaces.  |
+| spaces.c     | spaces(char *line)  | Print environment.  |
 | functions.c  | getstringlen(char *string)  | Determines the length of a text string.  |
 | functions.c  | *_strncpy(char *dest, char *src, int n)  | Copies a text string.  |
 | functions.c  | _strcmp(char *s1, char *s2)  | Comparison of two text strings.  |
@@ -92,26 +94,31 @@ Commands such as: ls and its derivatives, pwd, cat and echo.
 ### Ls:
 ```c
 :D : ls
-AUTHORS   README.md   execution.c   functions.c   hsh   main.c   path.c   prompt.c   shell.h
+AUTHORS    execution.c  main.c              prompt.c
+README.md  functions.c  man_1_simple_shell  shell.h
+builtin.c  hsh          path.c              spaces.c
 :D : ls -la
-total 68
-drwxrwxr-x 3 vagrant vagrant  4096 Dec  7 00:41  .
-drwxrwxr-x 6 vagrant vagrant  4096 Dec  5 19:43  ..
-drwxrwxr-x 8 vagrant vagrant  4096 Dec  7 00:40  .git
--rw-rw-r-- 1 vagrant vagrant   272 Dec  5 19:43  AUTHORS
--rw-rw-r-- 1 vagrant vagrant    21 Dec  5 19:43  README.md
--rw-rw-r-- 1 vagrant vagrant   879 Dec  7 00:40  execution.c
--rw-rw-r-- 1 vagrant vagrant  1540 Dec  7 00:40  functions.c
--rwxrwxr-x 1 vagrant vagrant 17808 Dec  7 00:41  hsh
--rw-rw-r-- 1 vagrant vagrant  1337 Dec  7 00:40  main.c
--rw-rw-r-- 1 vagrant vagrant  3403 Dec  7 00:40  path.c
--rw-rw-r-- 1 vagrant vagrant   356 Dec  7 00:40  prompt.c
--rw-rw-r-- 1 vagrant vagrant   734 Dec  7 00:40  shell.h
+total 52
+drwxrwxrwx 1 caritoespi caritoespi  4096 Dec  9 19:23 .
+drwxrwxrwx 1 caritoespi caritoespi  4096 Dec  7 13:07 ..
+drwxrwxrwx 1 caritoespi caritoespi  4096 Dec  9 16:44 .git
+-rwxrwxrwx 1 caritoespi caritoespi   272 Dec  7 13:37 AUTHORS
+-rwxrwxrwx 1 caritoespi caritoespi  7079 Dec  9 19:24 README.md
+-rwxrwxrwx 1 caritoespi caritoespi   220 Dec  9 10:04 builtin.c
+-rwxrwxrwx 1 caritoespi caritoespi   795 Dec  9 15:53 execution.c
+-rwxrwxrwx 1 caritoespi caritoespi  1370 Dec  7 13:37 functions.c
+-rwxrwxrwx 1 caritoespi caritoespi 18184 Dec  9 19:23 hsh
+-rwxrwxrwx 1 caritoespi caritoespi   776 Dec  9 15:59 main.c
+-rwxrwxrwx 1 caritoespi caritoespi  1773 Dec  9 19:24 man_1_simple_shell
+-rwxrwxrwx 1 caritoespi caritoespi  2083 Dec  9 13:26 path.c
+-rwxrwxrwx 1 caritoespi caritoespi   208 Dec  7 13:37 prompt.c
+-rwxrwxrwx 1 caritoespi caritoespi   674 Dec  9 10:04 shell.h
+-rwxrwxrwx 1 caritoespi caritoespi   418 Dec  8 23:07 spaces.c
 ```
 ### pwd:
 ```c
 :D : pwd
-/home/vagrant/simple_shell/prueba_simple_shell
+/home/vagrant/simple_shell/simple_shell
 ```
 ### cat (file.c):
 ```c
@@ -147,12 +154,13 @@ Commands such as: ls and pwd by entering the full path.
 ### Ls:
 ```c
 :D : /bin/ls
- AUTHORS   README.md   execution.c   functions.c   hsh   main.c   path.c   prompt.c   shell.h
+ AUTHORS    builtin.c    functions.c  main.c              path.c    shell.h
+README.md  execution.c  hsh          man_1_simple_shell  prompt.c  spaces.c
 ```
 ### pwd:
 ```c
 :D : /bin/pwd
-/home/vagrant/simple_shell/prueba_simple_shell
+/home/vagrant/simple_shell/simple_shell
 ```
 ------------
 

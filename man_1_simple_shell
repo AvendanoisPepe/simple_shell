@@ -1,4 +1,4 @@
-.TH HSH  "NOVEMBER 2021" Version(0.1) "SIMPLE SHELL"
+.TH HSH  "NOVEMBER 2021" Version(0.1) "SIMPLE SHELL MANUAL"
 .SH NAME
 .PP
 .B hsh - command interpreter (shell) 
@@ -31,30 +31,45 @@ may be invoked with the same functionality in
 or
 .I non-interactive
 mode.  The user may quit the program by typing "exit" or "Ctrl + D" on the command line.
-When the program quits or a command has been executed,
-.B simple shell
-returns with a new prompt: ":D : "
-
+The program is compiled with the following command:
+.PP 
+.B gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+.PP
+enter
+.B ./hsh
+to execute simple_shell and shows the prompt: ":D : "
+.SH USAGE
+:D : command [-flag] [file / directory]
+.PP
+.SH PATH
+When the user typing a command like ls, pwd or /bin/ls, /bin/pwd
+the simple_shell checking if the command there are in the PATH.
+.PP
 .B Examples
 .IP
 
 :D : pwd
 
-/home/vagrant/simple_shell/prueba_simple_shell
+/home/vagrant/simple_shell/simple_shell
 
 :D : /bin/pwd
 
-/home/vagrant/simple_shell/prueba_simple_shell
+/home/vagrant/simple_shell/simple_shell
 
 :D : ls
 
-AUTHORS  README.md   execution.c   functions.c   hsh   main.c   path.c   prompt.c   shell.h
+AUTHORS    execution.c  main.c              prompt.c
+README.md  functions.c  man_1_simple_shell  shell.h
+builtin.c  hsh          path.c              spaces.c
 
+:D : /bin/ls
+AUTHORS    builtin.c    functions.c  main.c              path.c    shell.h
+README.md  execution.c  hsh          man_1_simple_shell  prompt.c  spaces.c
 .PP
-.SH RESERVED WORDS
+.SH BUILTINS
 .B exit:
 quits the program, exits the shell.
-
+.PP
 .B env:
 prints the environment variables
 .PP
